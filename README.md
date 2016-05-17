@@ -3,6 +3,9 @@ iOS passcode input view
 
 Optimized for iPhone and iPad. Should work on Android too.
 
+![Demo](/demo.gif)
+
+## Usage
 ~~~
 // Init the passcode view
 var passCodeControl = require('/lib/passcode');
