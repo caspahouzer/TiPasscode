@@ -1,7 +1,7 @@
 # TiPasscode
 iOS passcode input view
 
-Optimized for iPhone and iPad. Should word on Android too.
+Optimized for iPhone and iPad. Should work on Android too.
 
 ~~~
 // Init the passcode view
