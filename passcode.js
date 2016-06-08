@@ -93,6 +93,19 @@ function PasscodeControl() {
      * Buttons
      */
     var startNum = 1;
+    var charArray = [
+        '',
+        '',
+        'A B C',
+        'D E F',
+        'G H I',
+        'J K L',
+        'M N O',
+        'P Q R S',
+        'T U V',
+        'W X Y Z',
+        ''
+    ];
 
     /**
      * 4 rows with 3 buttons
@@ -124,6 +137,17 @@ function PasscodeControl() {
                     fontFamily: 'HelveticaNeue-Light'
                 }
             });
+
+            if (charArray[startNum] != '') {
+                button.add(Ti.UI.createLabel({
+                    text: charArray[startNum],
+                    color: '#fff',
+                    bottom: 10,
+                    font: {
+                        fontSize: 10
+                    }
+                }));
+            }
 
             buttonContainer.add(button);
             if (startNum === 10 || startNum === 12) {
